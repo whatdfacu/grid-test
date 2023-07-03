@@ -3,7 +3,6 @@ function loaded() {
 }
 function myFunction() {
   alert("hello motherfucka");
-  prompt("are you a motherfucka?");
 }
 
 function clicky(message) {
@@ -13,6 +12,8 @@ function clicky(message) {
 function busted(message) {
   alert("Ah, you thought there were no more interactive squares? Thanks for not giving up and trying the " + message + " :)");
 }
+
+function momoTalk () {alert("hi! my name is momo!")};
 
 myFunction("section");
 document.getElementById("firstSquare").onclick = function () {
@@ -33,7 +34,9 @@ document.getElementById("squareButt").onclick = function () {
 document.getElementById("lastSquare").onclick = function () {
   busted("last square");
 };
-
+document.getElementById("momo-img1").onclick = function () {
+  busted("last square");
+};
 var helloMessage1 = "welcome to the character's counter, this frase has ";
 var helloMessage2 = " letters (including the spaces and excluding the numbers!) , thank you.";
 var fullMessage = helloMessage1 + helloMessage2;
