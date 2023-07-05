@@ -10,10 +10,16 @@ function clicky(message) {
   alert("you touched the " + message);
 }
 function busted(message) {
-  alert("Ah, you thought there were no more interactive squares? Thanks for not giving up and trying the " + message + " :)");
+  alert(
+    "Ah, you thought there were no more interactive squares? Thanks for not giving up and trying the " +
+      message +
+      " :)"
+  );
 }
 
-function momoTalk () {alert("hi! my name is momo!")};
+function momoTalk() {
+  alert("hi! my name is momo!");
+}
 
 myFunction("section");
 document.getElementById("firstSquare").onclick = function () {
@@ -34,13 +40,18 @@ document.getElementById("squareButt").onclick = function () {
 document.getElementById("lastSquare").onclick = function () {
   busted("last square");
 };
-document.getElementById("momo-img1").onclick = function () {
-  busted("last square");
-};
+
+for (var i = 1; i <= 18; i++) {
+  document.getElementById("grid-item-" + i).onclick = function () {
+    momoTalk();
+  };
+}
+
 var helloMessage1 = "welcome to the character's counter, this frase has ";
-var helloMessage2 = " letters (including the spaces and excluding the numbers!) , thank you.";
+var helloMessage2 =
+  " letters (including the spaces and excluding the numbers!) , thank you.";
 var fullMessage = helloMessage1 + helloMessage2;
-var count = fullMessage.indexOf('.')+1;
+var count = fullMessage.indexOf(".") + 1;
 var fullMessageCounted = helloMessage1 + count + helloMessage2;
 
-alert (fullMessageCounted);
+alert(fullMessageCounted);

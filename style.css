@@ -12,8 +12,6 @@ main {
 
 .grid-container {
   margin: 10px 5%;
-  /*     padding-top: 3%;
- */
   padding-bottom: 3%;
   position: relative;
   display: grid;
@@ -23,8 +21,6 @@ main {
 }
 
 .grid-item {
-  color: rgba(255, 255, 255, 0.58);
-  font-family: "Belanosima", sans-serif;
   margin-bottom: 1%;
   background-color: rgba(70, 69, 140, 0.75);
   text-align: center;
@@ -33,33 +29,23 @@ main {
   position: relative;
 }
 
+
 .flex-item {
   color: rgba(255, 255, 255, 0.58);
   font-family: "Belanosima", sans-serif;
   margin-bottom: 1%;
   margin-left: auto;
   margin-right: auto;
-  width: 85px;
-  height: 55px;
   background-color: rgba(70, 69, 140, 0.75);
   text-align: center;
   border-radius: 3%;
-  padding-top: 35px;
+  height: 100px;
+  width: 100px;
 }
 
 #longItem {
   grid-area: 1/2/7/2;
 }
-
-/* 
-.grid-item:nth-child(3n+1) {
-    background-color: rgba(255, 255, 0, 0);
-    border: none;
-}
-.grid-item:nth-child(3n+3) {
-    background-color: rgba(255, 255, 0, 0);
-    border: none;
-} */
 
 #my-video {
     position: fixed;
