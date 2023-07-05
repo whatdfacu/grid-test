@@ -55,3 +55,7 @@ var count = fullMessage.indexOf(".") + 1;
 var fullMessageCounted = helloMessage1 + count + helloMessage2;
 
 alert(fullMessageCounted);
+
+var capture = document.getElementById("squareButt");
+console.log(capture.innerHTML);
+
